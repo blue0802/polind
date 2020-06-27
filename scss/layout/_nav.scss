@@ -47,6 +47,20 @@ nav {
             &:hover {
                 color: $green-clr;
             }
+            input {    
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: $white-clr;
+                transition: all 0.4s;
+                width: 0;
+            }
+            &.show input{
+                width: 168px;
+                padding: 0.25rem 0.5rem;
+                border: 1px solid $green-clr;
+                border-radius: 0.625rem;
+            }
         }
     }
 }
