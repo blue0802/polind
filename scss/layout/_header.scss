@@ -1,7 +1,7 @@
 header {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 130vh;
     background: url("../img/bg.png");
     .box {
         width: 34rem;
@@ -24,28 +24,6 @@ header {
             font-size: 1.125rem;
             color: $gray-clr;
             margin-bottom: 3rem;
-        }
-        &__btn-search {
-            display: inline-block;
-            background-color: $yellow-clr;
-            border-radius: 1.75rem;
-            transition: all 0.4s;
-            cursor: pointer;
-            a {
-                display: block;
-                padding: 0.8rem 1.25rem;
-                text-decoration: none;
-                color: $brown-clr;
-                font-weight: 600;
-                word-spacing: 0.125rem; 
-                transition: all 0.4s;           
-            }
-            &:hover {
-                background-color: $green-clr;
-            }
-            &:hover a{
-                color: $white-clr;
-            }
         }
     }
     &::before {
