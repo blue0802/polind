@@ -1,6 +1,5 @@
 .btn {
     display: inline-block;
-    background-color: $yellow-clr;
     border-radius: 1.75rem;
     transition: all 0.4s;
     cursor: pointer;
@@ -9,15 +8,15 @@
         display: block;
         padding: 0.6rem 1.25rem;
         text-decoration: none;
-        color: $brown-clr;
+        color: $white-clr;        
         font-weight: 600;
         word-spacing: 0.125rem; 
         transition: all 0.4s;           
     }
     &:hover {
-        background-color: $green-clr;
+        background-color: $yellow-clr;
     }
     &:hover a{
-        color: $white-clr;
+        color: $brown-clr;
     }
 }

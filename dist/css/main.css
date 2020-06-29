@@ -8,7 +8,6 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: #FFC74A;
   border-radius: 1.75rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -20,7 +19,7 @@ body {
   display: block;
   padding: 0.6rem 1.25rem;
   text-decoration: none;
-  color: #B98000;
+  color: #fff;
   font-weight: 600;
   word-spacing: 0.125rem;
   -webkit-transition: all 0.4s;
@@ -28,11 +27,22 @@ body {
 }
 
 .btn:hover {
-  background-color: #71c97c;
+  background-color: #FFC74A;
 }
 
 .btn:hover a {
+  color: #B98000;
+}
+
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #ccc;
+  font-size: 0.8rem;
   color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 nav {
@@ -175,6 +185,10 @@ header .box__description {
   margin-bottom: 3rem;
 }
 
+header .box__btn {
+  border: 1px solid #ccc;
+}
+
 header::before {
   content: '';
   position: absolute;
@@ -184,9 +198,9 @@ header::before {
 }
 
 .slides-show {
-  position: relative;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  position: absolute;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
 
 .slides-show .title {
@@ -239,6 +253,11 @@ header::before {
 
 .slides-show .slides .card__subtitle {
   margin-bottom: 2rem;
+  color: #FFC74A;
+}
+
+.slides-show .slides .card__btn {
+  border: 1px solid #ccc;
 }
 
 .slides-show .slides .card__btn a {
@@ -264,6 +283,109 @@ header::before {
 
 .slides-show .slides .card:hover .card__inner {
   opacity: 1;
+}
+
+.travels {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  top: 220px;
+  text-align: center;
+}
+
+.travels .box {
+  width: 80%;
+  margin: auto;
+}
+
+.travels .box .title {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.travels .box .search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.travels .box .search input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 0.8rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.travels .box .search i {
+  font-size: 1.25rem;
+  color: #FFC74A;
+  cursor: pointer;
+}
+
+.travels .box .tags {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.travels .box .tags .tag:first-child {
+  background-color: #FFC74A;
+}
+
+.travels .grid-item {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.travels .grid-item .item {
+  color: #606F81;
+  margin-bottom: 2rem;
+}
+
+.travels .grid-item .item__img {
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 351px;
+}
+
+.travels .grid-item .item__title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.travels .grid-item .item__subtitle {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.travels .grid-item .item__btn {
+  border: 1px solid #ccc;
+}
+
+.travels .grid-item .item__btn a {
+  color: #ccc;
+  font-size: 0.65rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.travels .grid-item .item__btn a:hover {
+  color: #B98000;
 }
 
 * {

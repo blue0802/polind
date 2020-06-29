@@ -1,6 +1,6 @@
 .slides-show {
-    position: relative;
-    transform: translateY(-50%);
+    position: absolute;
+    transform: translateY(-60%);
     .title {
         text-align: center;
         font-size: 1.25rem;
@@ -36,11 +36,15 @@
             }
             &__subtitle {
                 margin-bottom: 2rem;
+                color: $yellow-clr;
             }
-            &__btn a{
-                padding: 0.5rem 0.8rem;
-                width: 10rem;
-                font-size: 0.8rem;
+            &__btn {
+                border: 1px solid $gray-clr;
+                a {
+                    padding: 0.5rem 0.8rem;
+                    width: 10rem;
+                    font-size: 0.8rem;
+                }
             }
             &::before {
                 content: '';
