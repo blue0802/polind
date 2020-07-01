@@ -4,6 +4,7 @@
     margin: auto;
     top: 220px;
     text-align: center;
+    margin-bottom: 2rem;
     .box {
         width: 80%;
         margin: auto;
@@ -49,7 +50,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
         .item {
-            color: $sky-clr;
+            color: $dorian-clr;
             margin-bottom: 2rem;
             &__img {
                 margin-bottom: 1rem;
