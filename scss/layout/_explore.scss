@@ -20,7 +20,6 @@
         }
         .text, .image {
             width: 50%;
-            flex: 1;
         }
         .text {
             padding-right: 1rem;
@@ -31,6 +30,16 @@
             }
             p {
                 font-size: 0.925rem;
+            }
+            .btn {
+                margin-top: 3rem;
+                border: 1px solid $gray-clr;
+                a {
+                    color: $gray-clr;
+                    &:hover {
+                        color: $brown-clr; 
+                    }
+                }
             }
         }
         .image {

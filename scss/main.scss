@@ -4,11 +4,19 @@
 @import 'components/button';
 @import 'components/tag';
 
+
+@import 'abstract/mixin';
+
 @import 'layout/nav';
 @import 'layout/header';
 @import 'layout/slideshow';
 @import 'layout/travels';
 @import 'layout/explore';
+@import 'layout/sign-up';
+@import 'layout/footer';
+
+@import 'tablet';
+@import 'mobile';
 
 * {
     margin: 0;
@@ -17,6 +25,7 @@
 }
 
 body {
+    width: 100%;
     height: 100%;
-    height: 100%;
+    background-color: #fdfdfd;
 }
